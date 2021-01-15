@@ -4,6 +4,26 @@
   color: @text-color;
 }
 
+//Body
+body {
+  background: white url("");
+  margin: 0;
+  padding: 0;
+}
+
+//Inputs sets default for all <input/> elements
+input (
+  width: 236px;
+  height: 38px;
+  border: 1px solid @border-color;
+  padding: 0 10px;
+  outline: none;
+  font-size: 17px;
+
+  &:focus {
+    background: #FFFDF2;// causes input to have a light yellow background when focused
+  }
+)
 
 
 //Variables and Mix-ins
