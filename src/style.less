@@ -12,7 +12,7 @@ body {
 }
 
 //Inputs sets default for all <input/> elements
-input (
+input {
   width: 236px;
   height: 38px;
   border: 1px solid @border-color;
@@ -21,10 +21,31 @@ input (
   font-size: 17px;
 
   &:focus {
-    background: #FFFDF2;// causes input to have a light yellow background when focused
+    background: #FFFDF2; // causes input to have a light yellow background when focused
   }
-)
+}
+//Submits
+input[type="submit"]{
+  height: 36px;
+  border: 1px solid #7BC574;
+  border-radius: 2px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 20px;
+  cursor: pointer;
+  .gradient4f(0%, #8CD585, 23%, #82CD7A, 86%, #55AD4C, 100%, #4FA945);
+}
 
+//Links
+
+a {
+  text-decoration: none;
+  .antialiased(#58B84E);
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 //Variables and Mix-ins
 
